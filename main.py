@@ -330,7 +330,7 @@ LEADS = [
     {
         "kicker": "EUROPE  |  POLAND",
         "headline": "RUSSIAN MISSILES CRASH IN POLAND",
-        "body": ("Two Russian missiles and a drone crashed in "
+        "body": ("Two Russian missiles and a suspected drone crashed in "
                  "Poland, Warsaw said."),
     },
 ]
@@ -358,8 +358,8 @@ MIDS = [
     },
     {
         "kicker": "CLIMATE  |  ANTALYA",
-        "headline": "COP31 REACHES ITS FINAL DAY",
-        "body": ("States demand a stronger deal at COP31's final day."),
+        "headline": "COP31 DRAGS INTO OVERTIME",
+        "body": ("No deal yet as talks run past their final day."),
     },
     {
         "kicker": "EUROPE",
@@ -368,8 +368,8 @@ MIDS = [
     },
     {
         "kicker": "TECH  |  WASHINGTON",
-        "headline": "US CLEARED 900,000 AI CHIPS FOR CHINA",
-        "body": ("US cleared 900,000 Nvidia and AMD AI chips for China."),
+        "headline": "US KEEPS H200 CHIP LICENCES",
+        "body": ("Bessent: H200 licences stand after Shenzhen."),
     },
     {
         "kicker": "TECH  |  NVIDIA",
@@ -380,10 +380,10 @@ MIDS = [
 
 # Numbered briefs: (number, one-line headline with the key figure)
 BRIEFS = [
-    "SIBERIA PLANE CRASH KILLS 19",
+    "NVIDIA SINKS 14% ON SEC PROBE",
     "FRENCH POLICE GUILTY OVER ZECLER",
-    "NVIDIA HIRES FIRM OVER HUANG CLAIMS",
-    "KIM TOURS FACTORIES AFTER SNUB",
+    "TRUMP: PUTIN WANTS UKRAINE DEAL",
+    "YOUTUBE TO PAY $3BN TO SCHOOLS",
     "MAN GUILTY OF SPARKING DEADLY LA FIRE",
     "ANTHROPIC SLIDES AFTER $81.3BN IPO",
     "BITCOIN SLIPS BELOW $60,000",
@@ -399,7 +399,7 @@ BRIEFS = [
     "NORWAY RETHINKS SCREENS IN SCHOOLS",
     "US PRESSES SINGAPORE ON IRAN RULES",
     "2ND JUDGE HALTS TRUMP ARCH PROJECT",
-    "SWEDEN VOTES SUNDAY ON RIGHT-WING RULE",
+    "TAIWAN STOCKS PLUNGE 6.2%",
     "TRUMP: NO RUSH ON IRAN DECISIONS",
     "HOUTHI THREATS WIDEN TO JEDDAH",
 ]
@@ -444,11 +444,11 @@ MAP_ROWS = [
 # Positions are nudged a little so the crowded eastern
 # Mediterranean pins stay readable on this schematic map.
 PINS = [
-    (34, 8, "1", "1 RIYADH", 12, -4),
-    (14, 13, "2", "2 PERU", -68, -4),
+    (34, 8, "1", "1 RIYADH", 12, -12),
+    (24, 14, "2", "2 PERU", -68, -4),
     (30, 2, "3", "3 UKRAINE", -70, 12),
     (27, 2, "4", "4 DENMARK", -96, -4),
-    (32, 6, "5", "5 ANTALYA", 14, 12),
+    (32, 6, "5", "5 ANTALYA", 14, 20),
     (11, 6, "6", "6 WASHINGTON", 12, -4),
 ]
 
@@ -487,7 +487,7 @@ def draw_masthead(c):
     c.hline(0, W, 0, RED, 4)
     c.text_centred(W // 2, 10, "THE WORLD TODAY", 5, INK, bold=True)
     c.draw_text(16, 47, "SATURDAY, 21 NOVEMBER 2026", 2, RED, bold=True)
-    right = "32 STORIES  -  6 CONTINENTS  -  ONE DAY"
+    right = "34 STORIES  -  5 CONTINENTS  -  ONE DAY"
     c.draw_text(W - 16 - text_width(right, 2), 47, right, 2, INK, bold=True)
     c.hline(0, W, 62, INK, 2)
     # red date-check bar
@@ -648,7 +648,7 @@ def build():
     c.hline(16, W - 16, 980, INK, 2)
     c.draw_text(16, 988, SOURCES, 1, INK)
     c.draw_text(16, 1000,
-                "ALL 32 STORIES HAPPENED OR WERE FIRST REPORTED ON "
+                "ALL 34 STORIES HAPPENED OR WERE FIRST REPORTED ON "
                 "SATURDAY 21 NOVEMBER 2026. DRAWN BY CODE; NO PHOTOGRAPHS.",
                 1, GREY)
     speckle(c)
